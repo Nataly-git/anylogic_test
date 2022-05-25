@@ -12,7 +12,7 @@ public class Main {
         Calculator calculator = new Calculator(tickets);
         System.out.printf("Среднее время полета между городами Владивосток " +
                 "и Тель-Авив составляет %d минуты.\n", calculator.getAverageTime());
-        System.out.printf("90-й процентиль времени полета между городами" +
+        System.out.printf("90-й процентиль времени полета между городами " +
                 "Владивосток и Тель-Авив составляет %d минуты.\n", calculator.getProcentil(90.0));
     }
 }
