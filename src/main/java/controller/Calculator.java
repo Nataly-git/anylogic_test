@@ -32,7 +32,6 @@ public class Calculator {
             LocalDateTime arrivalDateTime = LocalDateTime.of(ticket.getArrival_date(), ticket.getArrival_time());
             long duration = Math.abs(ChronoUnit.MINUTES.between(arrivalDateTime, departureDateTime));
             durations.add(duration);
-            System.out.println(duration);
         }
         return durations;
     }

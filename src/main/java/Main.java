@@ -6,7 +6,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        DataJsonConverter converter = new DataJsonConverter("/Users/nataly/IdeaProjects/anylogic_test/tickets.json");
+        DataJsonConverter converter = new DataJsonConverter(args[0]);
         List<Ticket> tickets = converter.convertData().getTickets();
         tickets.forEach(System.out::println);
         Calculator calculator = new Calculator(tickets);

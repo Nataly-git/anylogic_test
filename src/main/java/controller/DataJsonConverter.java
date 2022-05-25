@@ -27,7 +27,7 @@ public class DataJsonConverter {
         try {
             tickets = mapper.readValue(new File(path), TicketsWrapper.class);
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println("Файл не найден");
         }
         return tickets;
     }
